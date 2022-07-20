@@ -1,0 +1,207 @@
+.cart {
+    max-width: 1110px;
+    width: 100%;
+    margin-bottom: 107px;
+
+    .cart__header {
+        height: 67px;
+    }
+
+    .cart__main {
+        display: flex;
+        background: white;
+
+        .cart__mainLeft {
+            width: 100%;
+
+            .cart__errors {
+                height: 59px;
+
+                border-bottom: 1px solid #e6e6e6;
+
+                .cart__error {
+                    margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+                    color: #C93E33;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .cart__bottom {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.009em;
+                color: #C93E33;
+                height: 84px;
+
+                button {
+                    img {
+                        width: 11px;
+                        height: 15px;
+                    }
+                }
+
+                :nth-last-child(1) {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .cart__mainRight {
+            width: 280px;
+            border-left: 1px solid #e6e6e6;
+
+            .cart__title {
+                display: flex;
+                align-items: center;
+                height: 59px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                border-bottom: 1px solid #e6e6e6;
+                padding-left: 20px;
+            }
+
+            .customer {
+                padding: 0px 20px;
+
+                p {
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #B3B3B3;
+                    text-align: left;
+                }
+
+                .customer__inputs {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                    border-bottom: 1px solid #e6e6e6;
+                }
+
+                input {
+                    border: none;
+                    outline: 0;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+
+                input::placeholder {
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #B3B3B3;
+                }
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                    margin-right: 12px;
+                }
+
+                .cart__totalPrice {
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 1px;
+                    margin: 21px 0px;
+
+                    :nth-last-child(1) {
+                        color: #C93E33;
+                    }
+                }
+
+                .cart__buttons {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .cart__makeOrder {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 42px;
+                        width: 240px;
+                        background: #C93E33;
+                        color: white;
+                        margin-bottom: 15px;
+                        border-radius: 4px;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 18px;
+
+                        img {
+                            width: 17px;
+                            height: 15px;
+                        }
+                    }
+
+                    .cart__takeOffer {
+                        display: flex;
+                        border: 1px solid #C93E33;
+                        border-radius: 4px;
+                        align-items: center;
+                        width: 240px;
+                        height: 62px;
+                        color: #C93E33;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 18px;
+
+
+                        :nth-child(1) {
+                            display: flex;
+                            margin: auto;
+                            width: 26px;
+                            height: 30px;
+                            background: rgb(201, 62, 51, 0.1);
+
+                            img {
+                                width: 18px;
+                                height: 18px;
+                            }
+
+                        }
+
+                        :nth-child(2) {
+                            position: relative;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            right: 50px;
+                            top: 10px;
+                            background: white;
+                            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+
+                            img {
+                                margin-top: 3px;
+                                width: 7px;
+                                height: 7px;
+                                background: white;
+                            }
+                        }
+
+                        :nth-child(3) {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

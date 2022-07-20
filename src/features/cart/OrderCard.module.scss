@@ -1,0 +1,89 @@
+.order {
+    display: flex;
+    align-items: center;
+    height: 171px;
+    gap: 25px;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+    max-width: 890px;
+
+    .order__image {
+        margin-left: 20px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .order__info {
+        max-width: 238px;
+        width: 100%;
+        letter-spacing: 0.009em;
+
+        .order__infoStandart {
+            width: 83px;
+            height: 12px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            color: #C93E33;
+            background: rgb(201, 62, 51, 0.1);
+            border-radius: 2px;
+            padding: 4px 0px;
+        }
+
+        .order__infoOrder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: left;
+            margin: 10px 0px 16px 0px;
+        }
+
+        .order__infoPrice {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: left;
+            color: #b3b3b3;
+        }
+    }
+
+    .order__infoQty {
+        display: flex;
+        border: 1px solid #e6e6e6;
+        align-items: center;
+        height: 35px;
+        letter-spacing: 0.009em;
+
+        .order__infoCounter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 35px;
+            border-left: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+
+
+        button {
+            width: 28px;
+            height: 35px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    .order__total {
+        text-align: right;
+        width: 100px;
+    }
+
+    .order__basket {
+        width: 11px;
+        height: 15px;
+    }
+}

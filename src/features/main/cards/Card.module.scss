@@ -1,0 +1,182 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 278px;
+    height: 426px;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+
+    .fake {
+        width: 278px;
+        height: 426px;
+
+        .card__marketing {
+            display: flex;
+            height: 50px;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            letter-spacing: 0.009em;
+            text-transform: uppercase;
+            color: white;
+            gap: 5px;
+            padding-left: 15px;
+            align-items: center;
+
+            .card__marketingHit {
+                display: flex;
+                border-radius: 50px;
+                padding: 5px 10px 4px 10px;
+                height: 21px;
+                align-items: center;
+                background: #FD7272;
+            }
+
+            .card__marketingDiscount {
+                display: flex;
+                border-radius: 50px;
+                padding: 5px 10px 4px 10px;
+                height: 21px;
+                align-items: center;
+                background: #E67E22;
+            }
+
+            .card__marketingSale {
+                display: flex;
+                border-radius: 50px;
+                padding: 5px 10px 4px 10px;
+                height: 21px;
+                align-items: center;
+                background: #27AE60;
+            }
+        }
+
+        .card__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 136px;
+            padding: 0px 20px;
+            margin-bottom: 21px;
+            text-align: left;
+
+            .card__infoStandart {
+                width: 83px;
+                height: 12px;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                letter-spacing: 0.009em;
+                color: #C93E33;
+                background: rgb(201, 62, 51, 0.1);
+                border-radius: 2px;
+                margin-bottom: 25px;
+                padding: 4px 0px;
+            }
+
+            .card__infoOrder {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.009em;
+                text-align: left;
+
+                .card__infoPrice {
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    letter-spacing: 0.009em;
+                }
+
+                .card__infoQty {
+                    display: none;
+                }
+            }
+        }
+
+        .card__buttons {
+            display: none;
+        }
+    }
+}
+
+.card:hover {
+    .fake {
+        height: 545px;
+        position: absolute;
+        box-shadow: 0px 12px 12px 4px rgba(0, 0, 0, 0.1);
+
+        .card__info {
+            .card__infoOrder {
+                .card__infoQty {
+                    display: flex;
+                    border: 1px solid #e6e6e6;
+                    align-items: center;
+                    height: 35px;
+                    letter-spacing: 0.009em;
+
+                    .card__infoCounter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 56px;
+                        height: 35px;
+                        border-left: 1px solid #e6e6e6;
+                        border-right: 1px solid #e6e6e6;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+
+                    button {
+                        width: 28px;
+                        height: 35px;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+
+        .card__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100px;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.009em;
+            background: white;
+            padding-bottom: 31px;
+
+            .card__buttonCart {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 240px;
+                height: 42px;
+                background: #C93E33;
+                border-radius: 4px;
+                color: white;
+                margin-bottom: 15px;
+
+                img {
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 13.33px;
+                }
+            }
+
+            .card__buttonDetails {
+                width: 240px;
+                height: 42px;
+                background: #efefef;
+                border-radius: 4px;
+            }
+        }
+    }
+}

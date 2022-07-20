@@ -1,0 +1,25 @@
+.standarts {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+    padding: 0px 15px;
+
+    .standarts__button {
+        background: #f9f9f9;
+        border: none;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.009em;
+        padding: 0px 5px;
+        cursor: pointer;
+    }
+
+    .standarts__button_active {
+        background: red;
+    }
+}

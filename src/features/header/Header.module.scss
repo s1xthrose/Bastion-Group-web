@@ -1,0 +1,255 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1110px;
+        width: 100vw;
+        min-height: 46px;
+
+        @media screen and (max-width: 1200px) {
+            justify-content: center;
+        }
+
+        .header__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 457px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.009em;
+            flex-wrap: wrap;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+            }
+
+        }
+
+        .header__contacts {
+            display: flex;
+            flex-wrap: wrap;
+
+            .header__contactsPhone {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 1px;
+
+                img {
+                    width: 12.5px;
+                    height: 12.5px;
+                    margin-right: 12px;
+                }
+            }
+
+            .header__contactsPlace {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.009em;
+                margin-left: 32px;
+                color: #C93E33;
+
+                img:nth-child(1) {
+                    width: 10.6px;
+                    height: 13.75px;
+                    margin-right: 12px;
+                }
+
+                img:nth-child(3) {
+                    width: 4.67x;
+                    height: 4.67px;
+                    margin-left: 4px;
+                }
+            }
+
+            .header__contactsMail {
+                display: flex;
+                align-items: center;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: right;
+                letter-spacing: 0.008em;
+
+                img {
+                    width: 13.75px;
+                    height: 10.62px;
+                    margin: 0px 10.62px 0px 32px;
+                }
+
+                a {
+                    color: #333333;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .header__bottom {
+        display: flex;
+        min-height: 110px;
+        width: 100%;
+        background: white;
+        justify-content: center;
+        padding: 0px 10px 0px 10px;
+
+        .header__bottomContainer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1110px;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 1200px) {
+                gap: 15px;
+                margin: 15px;
+            }
+
+            .header__logo {
+                width: 82px;
+                height: 70px;
+                margin-right: 15px;
+            }
+
+            .header__brand {
+                width: 112px;
+                text-align: left;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+                letter-spacing: 0.009em;
+            }
+
+            .header__catalog {
+                display: flex;
+                align-items: center;
+                color: white;
+                background: #C93E33;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.009em;
+                border: none;
+                border-radius: 4px;
+                width: 145px;
+                height: 42px;
+
+                img {
+                    width: 16.67px;
+                    height: 16.67px;
+                    margin: 0px 16.67px 0px 21.67px;
+                }
+            }
+
+            .header__search {
+                display: flex;
+                border: 1px solid #e6e6e6;
+                border-radius: 4px;
+                align-items: center;
+                max-width: 546px;
+                width: 100%;
+                height: 42px;
+
+                :nth-child(1) {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0px 15px 0px 17px;
+                }
+
+                :nth-child(3) {
+                    width: 15px;
+                    height: 11.67px;
+                    margin: 0px 17px;
+                }
+            }
+
+            .header__search input {
+                border: none;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.009em;
+                width: 100%;
+                outline: 0;
+
+                :placeholder {
+                    color: #b3b3b3;
+                }
+            }
+
+            .header__favorites {
+                display: flex;
+                flex-direction: column;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.009em;
+                height: 42px;
+
+                button {
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+
+                    .header__favoritesIcon {
+                        width: 18.33px;
+                        height: 17.5px;
+                    }
+                }
+            }
+
+            .header__cart {
+                display: flex;
+                flex-direction: column;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.009em;
+                margin-top: 26px;
+
+
+                .header__cartIcon {
+                    width: 18.75px;
+                    height: 16.67px;
+                    margin-bottom: 6px;
+                }
+
+                .header__cartCounter {
+                    width: 11px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: #C93E33;
+                    color: white;
+                    position: relative;
+                    left: 22px;
+                    bottom: 44px;
+                    font-weight: 600;
+                    font-size: 8px;
+                    line-height: 10px;
+                    text-align: center;
+                    border: 2px solid #FFFFFF;
+                    padding-top: 2px;
+                }
+
+                .header__cartCounterHide {
+                    background: transparent;
+                    color: white;
+                }
+            }
+        }
+    }
+}
